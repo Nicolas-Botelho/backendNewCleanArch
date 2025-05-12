@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Morango.Domain", "Morango\Morango.Domain\Morango.Domain.csproj", "{36DB72F8-5986-4B6C-A88A-C3EDCCFC77C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Morango.Application", "Morango\Morango.Application\Morango.Application.csproj", "{F103BAB6-ABEE-4BE9-AD1C-56F2D699DBE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Morango.Infrastructure", "Morango\Morango.Infrastructure\Morango.Infrastructure.csproj", "{B3FA3FDF-4995-4C46-8B4B-526D670234B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Morango.WebAPI", "Morango\Morango.WebAPI\Morango.WebAPI.csproj", "{C198A404-3FB4-4B83-88F9-E2B4B198B54E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{63CEDB36-1307-4A1E-94BB-AC625DA385B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morango.Domain.Test", "Morango\Morango.Domain.Test\Morango.Domain.Test.csproj", "{ECB35018-3FA7-4FA4-B2B5-7F7500E21485}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36DB72F8-5986-4B6C-A88A-C3EDCCFC77C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DB72F8-5986-4B6C-A88A-C3EDCCFC77C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DB72F8-5986-4B6C-A88A-C3EDCCFC77C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DB72F8-5986-4B6C-A88A-C3EDCCFC77C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F103BAB6-ABEE-4BE9-AD1C-56F2D699DBE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F103BAB6-ABEE-4BE9-AD1C-56F2D699DBE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F103BAB6-ABEE-4BE9-AD1C-56F2D699DBE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F103BAB6-ABEE-4BE9-AD1C-56F2D699DBE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FA3FDF-4995-4C46-8B4B-526D670234B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FA3FDF-4995-4C46-8B4B-526D670234B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FA3FDF-4995-4C46-8B4B-526D670234B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FA3FDF-4995-4C46-8B4B-526D670234B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C198A404-3FB4-4B83-88F9-E2B4B198B54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C198A404-3FB4-4B83-88F9-E2B4B198B54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C198A404-3FB4-4B83-88F9-E2B4B198B54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C198A404-3FB4-4B83-88F9-E2B4B198B54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CEDB36-1307-4A1E-94BB-AC625DA385B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CEDB36-1307-4A1E-94BB-AC625DA385B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CEDB36-1307-4A1E-94BB-AC625DA385B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CEDB36-1307-4A1E-94BB-AC625DA385B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB35018-3FA7-4FA4-B2B5-7F7500E21485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB35018-3FA7-4FA4-B2B5-7F7500E21485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB35018-3FA7-4FA4-B2B5-7F7500E21485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB35018-3FA7-4FA4-B2B5-7F7500E21485}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69766354-AE61-479C-B6D7-C8FFA3931E1F}
+	EndGlobalSection
+EndGlobal
