@@ -1,18 +1,18 @@
 using AutoMapper;
 using ConectaFapes.Common.Application.DTO;
-using ConectaFapes.Common.Application.Interfaces.Services;
+using Morango.Application.Common.Interfaces;
 using ConectaFapes.Common.Domain;
 using ConectaFapes.Common.Domain.BaseEntities;
 using MediatR;
 
-namespace Morango.Application.UseCase.BaseCase
+namespace Morango.Application.Common.UseCase.Get
 {
     public class GetByIdHandler<IService, GetRequest, Request, Response, Entity> : IRequestHandler<GetRequest, Response>
         where Entity : BaseEntity
         where Response : BaseDto
         where GetRequest : IRequest<Response>
         where Request : IRequest<TResult<Response>>
-        where IService : IBaseCrudService<Request, Response, Entity>
+        where IService : IBaseGetService<Request, Response, Entity>
     {
 
         protected readonly IService _service;

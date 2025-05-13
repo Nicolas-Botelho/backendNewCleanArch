@@ -6,7 +6,7 @@ using MediatR;
 using ConectaFapes.Common.Application.Interfaces.Services;
 using ConectaFapes.Common.Infrastructure.Interfaces;
 
-namespace Morango.Application.UseCase.BaseCase
+namespace Morango.Application.Common.UseCase.CRUD
 {
     public class UpdateHandler<IService, UpdateRequest, Request, Response, Entity> : IRequestHandler<UpdateRequest, TResult<Response>>
         where Entity : BaseEntity

@@ -25,33 +25,16 @@ namespace Morango.Application.Common.Services
             _mapper = mapper;
             _repository = repository;
         }
-
-        //public virtual async Task<IQueryable<Response>> GetAll()
-        //{
-        //    var result = _repository.GetAll();
-        //    var response = result.ProjectTo<Response>(_mapper.ConfigurationProvider);
-        //    return response;
-        //}
-
-        public ICollection<Response> GetAll()
+        public virtual ICollection<Response> GetAll()
         {
-            var result = _repository.GetAll();
-            var response = result.ProjectTo<Response>(_mapper.ConfigurationProvider);
-            return response;
+            var result = _mapper.Map<ICollection<Response>>(_repository.GetAllAsNoTracking());
+            return result;
         }
 
-        //public virtual async Task<IQueryable<Response>> GetById(Guid id)
-        //{
-        //    var result = _repository.GetById(id);
-        //    var response = result.ProjectTo<Response>(_mapper.ConfigurationProvider);
-        //    return response;
-        //}
-
-        public Response GetById(Guid id)
+        public virtual Response GetById(Guid id)
         {
-            var result = _repository.GetById(id);
-            var response = result.ProjectTo<Response>(_mapper.ConfigurationProvider);
-            return response;
+            var result = _mapper.Map<Response>(_repository.GetByIdAsNoTracking(id).FirstOrDefault());
+            return result;
         }
     }
 }

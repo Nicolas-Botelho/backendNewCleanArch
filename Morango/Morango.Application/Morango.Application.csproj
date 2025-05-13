@@ -32,4 +32,11 @@
 	    </Reference>
 	</ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Feature\UC1\Event1\DTOs\" />
+    <Folder Include="Feature\UC1\Event1\Interface\" />
+    <Folder Include="Feature\UC1\Event1\Event1Case\" />
+    <Folder Include="Feature\UC1\Event1\Service\" />
+  </ItemGroup>
+
 </Project>

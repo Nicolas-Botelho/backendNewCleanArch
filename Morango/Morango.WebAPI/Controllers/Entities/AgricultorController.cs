@@ -1,10 +1,11 @@
 using AutoMapper;
-using Morango.Application.DTOs.Entities.Response;
-using Morango.Application.UseCase.Entities.AgricultorCase.GetAll;
-using Morango.Application.UseCase.Entities.AgricultorCase.GetById;
+using Morango.Application.Feature.CRUD.AgricultorEntity.DTOs;
 using Morango.WebApi.Controllers.BaseControllers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Morango.Application.Feature.CRUD.AgricultorEntity.AgricultorCase.GetAll;
+using Morango.Application.Feature.CRUD.AgricultorEntity.AgricultorCase.GetById;
+using ConectaFapes.Common.Presentation.BaseControllers;
 
 namespace Morango.WebApi.Controllers.Entities
 {
@@ -15,7 +16,7 @@ namespace Morango.WebApi.Controllers.Entities
         GetByIdAgricultorCommand,
         AgricultorResponseDTO>
     {
-        public AgricultorController(IMediator mediator, IMapper mapper) : base(mediator, mapper)
+        public AgricultorController(IMediator mediator, IMapper mapper, ILogger<BaseController> logger) : base(mediator, mapper, logger)
         {
         }
     }

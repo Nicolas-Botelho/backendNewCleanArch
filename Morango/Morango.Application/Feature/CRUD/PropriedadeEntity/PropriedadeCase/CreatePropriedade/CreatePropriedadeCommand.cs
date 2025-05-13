@@ -1,5 +1,6 @@
 using ConectaFapes.Common.Domain;
 using MediatR;
+using Morango.Application.Feature.CRUD.PropriedadeEntity.DTOs;
 using Morango.Domain.Enums;
 
 namespace Morango.Application.Feature.CRUD.PropriedadeEntity.PropriedadeCase.Create
@@ -7,5 +8,8 @@ namespace Morango.Application.Feature.CRUD.PropriedadeEntity.PropriedadeCase.Cre
     public record CreatePropriedadeCommand(
       string? Nome,
       string? Distrito
-    ) : IRequest<ApiResponse>;
+    ) : IRequest<TResult<PropriedadeResponseDTO>>
+    {
+
+    }
 }

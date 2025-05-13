@@ -1,40 +1,47 @@
 using AutoMapper;
-using Morango.Application.DTOs.Common;
+using ConectaFapes.Common.Application.DTO;
+using ConectaFapes.Common.Domain;
+using ConectaFapes.Common.Presentation.BaseControllers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OData.Query;
-using Microsoft.AspNetCore.OData.Routing.Controllers;
+using System.Diagnostics;
 
 namespace Morango.WebApi.Controllers.BaseControllers
 {
-    public class BaseGetController<GetAllCommand, GetByIdCommand, Response> : ODataController
-        where Response : BaseDTO
-        where GetAllCommand : IRequest<IQueryable<Response>>, new()
-        where GetByIdCommand : IRequest<IQueryable<Response>>
+    public abstract class BaseGetController<GetAllCommand, GetByIdCommand, Response>
+        : BaseController
+        where Response : BaseDto
+        where GetAllCommand : IRequest<ICollection<Response>>, new()
+        where GetByIdCommand : IRequest<Response>
     {
-        protected readonly IMediator _mediator;
-        protected readonly IMapper _mapper;
-
-        public BaseGetController(IMediator mediator, IMapper mapper)
+        public BaseGetController(IMediator mediator, IMapper mapper, ILogger<BaseController> logger) : base(mediator, mapper, logger)
         {
-            _mediator = mediator;
-            _mapper = mapper;
         }
 
         [HttpGet]
-        [EnableQuery(PageSize = 25, MaxExpansionDepth = 3)]
-        public async Task<IQueryable<Response>> GetAll()
+        public virtual async Task<ICollection<Response>> GetAll()
         {
+            _logger.LogInformation($"Requisicao: {Request.Method} - {Request.Path}");
+
+            var stopwatch = Stopwatch.StartNew();
             var response = await _mediator.Send(new GetAllCommand(), new CancellationToken());
+            stopwatch.Stop();
+
+            _logger.LogInformation($"A requisicao foi realizada com sucesso | Tempo: {stopwatch.ElapsedMilliseconds} ms");
             return response;
         }
 
         [HttpGet("{id}")]
-        [EnableQuery(MaxExpansionDepth = 3)]
-        public async Task<IQueryable<Response>> GetById(Guid id)
+        public virtual async Task<Response> GetById(Guid id)
         {
+            _logger.LogInformation($"Requisicao: {Request.Method} - {Request.Path}");
 
-            return await _mediator.Send(_mapper.Map<GetByIdCommand>(id), new CancellationToken());
+            var stopwatch = Stopwatch.StartNew();
+            var response = await _mediator.Send(_mapper.Map<GetByIdCommand>(id), new CancellationToken());
+            stopwatch.Stop();
+
+            _logger.LogInformation($"A requisicao foi realizada com sucesso | Tempo: {stopwatch.ElapsedMilliseconds} ms");
+            return response;
         }
     }
 }

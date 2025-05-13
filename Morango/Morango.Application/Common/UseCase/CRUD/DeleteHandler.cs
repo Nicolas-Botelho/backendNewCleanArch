@@ -6,7 +6,7 @@ using ConectaFapes.Common.Domain;
 using MediatR;
 using ConectaFapes.Common.Infrastructure.Interfaces;
 
-namespace Morango.Application.Common.UseCase
+namespace Morango.Application.Common.UseCase.CRUD
 {
     public class DeleteHandler<IService, DeleteRequest, Request, Response, Entity> : IRequestHandler<DeleteRequest, TResult<Response>>
         where Entity : BaseEntity
