@@ -1,10 +1,10 @@
 using FluentValidation;
 
-namespace Morango.Application.Feature.CRUD.PropriedadeEntity.PropriedadeCase.GetById
+namespace Morango.Application.Feature.CRUD.AgricultorEntity.AgricultorCase.GetById
 {
-    public class GetByIdPropriedadeValidator : AbstractValidator<GetByIdPropriedadeCommand>
+    public class GetByIdAgricultorValidator : AbstractValidator<GetByIdAgricultorCommand>
     {
-        public GetByIdPropriedadeValidator()
+        public GetByIdAgricultorValidator()
         {
 
         }

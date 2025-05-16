@@ -4,8 +4,8 @@ using Morango.Domain.Entities;
 using Morango.Domain.Interfaces.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Morango.Application.Common.Services;
 using Morango.Application.Feature.CRUD.AgricultorEntity.DTOs;
+using Morango.Application.Feature.BaseGetService;
 
 namespace Morango.Application.Feature.CRUD.AgricultorEntity.Service
 {

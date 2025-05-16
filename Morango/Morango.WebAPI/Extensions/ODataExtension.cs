@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.OData;
 using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
-using Morango.Application.Feature.CRUD.Propriedade.DTOs;
+using Morango.Application.Feature.CRUD.AgricultorEntity.DTOs;
+using Morango.Application.Feature.CRUD.PropriedadeEntity.DTOs;
 
 namespace Morango.WebApi.Extensions
 {

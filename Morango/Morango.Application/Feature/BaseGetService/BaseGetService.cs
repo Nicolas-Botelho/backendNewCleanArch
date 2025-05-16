@@ -1,14 +1,14 @@
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Morango.Application.Common.Interfaces;
 
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ConectaFapes.Common.Application.DTO;
 using ConectaFapes.Common.Domain.BaseEntities;
 using ConectaFapes.Common.Infrastructure.Interfaces;
+using Morango.Application.Feature.BaseGetInterface;
 
-namespace Morango.Application.Common.Services
+namespace Morango.Application.Feature.BaseGetService
 {
     public class BaseGetService<Request, Response, Entity, Repository> : IBaseGetService<Request, Response, Entity>
        where Entity : BaseEntity

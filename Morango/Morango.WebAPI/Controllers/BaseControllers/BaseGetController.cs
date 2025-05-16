@@ -1,7 +1,6 @@
 using AutoMapper;
 using ConectaFapes.Common.Application.DTO;
 using ConectaFapes.Common.Domain;
-using ConectaFapes.Common.Presentation.BaseControllers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;

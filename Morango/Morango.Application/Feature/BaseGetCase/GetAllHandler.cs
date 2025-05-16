@@ -2,16 +2,16 @@ using ConectaFapes.Common.Application.DTO;
 using ConectaFapes.Common.Domain.BaseEntities;
 using ConectaFapes.Common.Domain;
 using MediatR;
-using ConectaFapes.Common.Application.Interfaces.Services;
+using Morango.Application.Feature.BaseGetInterface;
 
-namespace Morango.Application.Common.UseCase.CRUD
+namespace Morango.Application.Feature.BaseGetCase
 {
     public class GetAllHandler<IService, GetRequest, Request, Response, Entity> : IRequestHandler<GetRequest, ICollection<Response>>
         where Entity : BaseEntity
         where Response : BaseDto
         where GetRequest : IRequest<ICollection<Response>>
         where Request : IRequest<TResult<Response>>
-        where IService : IBaseCrudService<Request, Response, Entity>
+        where IService : IBaseGetService<Request, Response, Entity>
     {
         protected readonly IService _service;
 

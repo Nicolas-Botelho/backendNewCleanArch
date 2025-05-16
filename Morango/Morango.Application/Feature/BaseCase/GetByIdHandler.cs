@@ -5,7 +5,7 @@ using ConectaFapes.Common.Domain;
 using ConectaFapes.Common.Domain.BaseEntities;
 using MediatR;
 
-namespace Morango.Application.Common.UseCase.CRUD
+namespace Morango.Application.Feature.BaseCase
 {
     public class GetByIdHandler<IService, GetRequest, Request, Response, Entity> : IRequestHandler<GetRequest, Response>
         where Entity : BaseEntity

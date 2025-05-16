@@ -1,11 +1,11 @@
 using AutoMapper;
 using ConectaFapes.Common.Application.DTO;
-using Morango.Application.Common.Interfaces;
 using ConectaFapes.Common.Domain;
 using ConectaFapes.Common.Domain.BaseEntities;
 using MediatR;
+using Morango.Application.Feature.BaseGetInterface;
 
-namespace Morango.Application.Common.UseCase.Get
+namespace Morango.Application.Feature.BaseGetCase
 {
     public class GetByIdHandler<IService, GetRequest, Request, Response, Entity> : IRequestHandler<GetRequest, Response>
         where Entity : BaseEntity

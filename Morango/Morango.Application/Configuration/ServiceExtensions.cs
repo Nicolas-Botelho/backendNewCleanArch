@@ -3,6 +3,8 @@ using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Morango.Application.Feature.CRUD.PropriedadeEntity.Interface;
 using Morango.Application.Feature.CRUD.PropriedadeEntity.Service;
+using Morango.Application.Feature.CRUD.AgricultorEntity.Interface;
+using Morango.Application.Feature.CRUD.AgricultorEntity.Service;
 using Morango.Application.Security.Interfaces;
 using Morango.Application.Security.Services;
 using Morango.Application.Shared.Behavior;

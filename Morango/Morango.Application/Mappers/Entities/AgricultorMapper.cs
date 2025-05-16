@@ -1,8 +1,7 @@
 using AutoMapper;
-using Morango.Application.DTOs.Entities.Request;
-using Morango.Application.DTOs.Entities.Response;
-using Morango.Application.DTOs.Common;
-using Morango.Application.UseCase.Entities.AgricultorCase.GetById;
+using ConectaFapes.Common.Utils.Responses;
+using Morango.Application.Feature.CRUD.AgricultorEntity.AgricultorCase.GetById;
+using Morango.Application.Feature.CRUD.AgricultorEntity.DTOs;
 using Morango.Domain.Entities;
 
 namespace Morango.Application.Mappers.Entities

@@ -1,14 +1,13 @@
-using Morango.Domain.Interfaces;
 using Morango.Infrastructure.Context;
 using Morango.Infrastructure.Repositories;
 using Morango.Domain.Interfaces.Security;
-using Morango.Domain.Interfaces.Common;
 using Morango.Domain.Interfaces.Entities;
 using Morango.Infrastructure.Repositories.Entities;
 using Morango.Infrastructure.Security.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ConectaFapes.Common.Infrastructure.Interfaces;
 
 
 namespace Morango.Infrastructure

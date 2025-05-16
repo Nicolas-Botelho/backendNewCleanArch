@@ -1,6 +1,6 @@
 using ConectaFapes.Common.Domain;
 
-namespace Morango.Application.Common.Interfaces
+namespace Morango.Application.Feature.BaseGetInterface
 {
     public interface IBaseGetService<Request, Response, Entity>
     {

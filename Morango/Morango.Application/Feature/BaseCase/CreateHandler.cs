@@ -6,7 +6,7 @@ using ConectaFapes.Common.Application.DTO;
 using ConectaFapes.Common.Application.Interfaces.Services;
 using ConectaFapes.Common.Infrastructure.Interfaces;
 
-namespace Morango.Application.Common.UseCase.CRUD
+namespace Morango.Application.Feature.BaseCase
 {
     public class CreateHandler<IService, CreateRequest, Request, Response, Entity> : IRequestHandler<CreateRequest, TResult<Response>>
         where Entity : BaseEntity

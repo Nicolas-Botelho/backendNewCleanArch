@@ -7,11 +7,11 @@ using Morango.Application.Feature.CRUD.PropriedadeEntity.PropriedadeCase.GetAll;
 using Morango.Application.Feature.CRUD.PropriedadeEntity.PropriedadeCase.GetById;
 using Morango.Application.Feature.CRUD.PropriedadeEntity.PropriedadeCase.Update;
 using Morango.Application.Feature.CRUD.PropriedadeEntity.DTOs;
-using ConectaFapes.Common.Presentation.BaseControllers;
+using Morango.WebApi.Controllers.BaseControllers;
 
 namespace Morango.WebApi.Controllers.Entities
 {
-    [Route("api/Propriedade")]
+    [Route("api/Morango/Propriedade")]
     [ApiController]
     public class PropriedadeController : BaseCrudController
         <GetAllPropriedadeCommand,

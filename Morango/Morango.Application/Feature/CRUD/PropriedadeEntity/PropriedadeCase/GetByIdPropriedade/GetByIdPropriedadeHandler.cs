@@ -2,7 +2,7 @@ using AutoMapper;
 using Morango.Application.Feature.CRUD.PropriedadeEntity.DTOs;
 using Morango.Application.Feature.CRUD.PropriedadeEntity.Interface;
 using Morango.Domain.Entities;
-using Morango.Application.Common.UseCase.CRUD;
+using Morango.Application.Feature.BaseCase;
 
 namespace Morango.Application.Feature.CRUD.PropriedadeEntity.PropriedadeCase.GetById
 {

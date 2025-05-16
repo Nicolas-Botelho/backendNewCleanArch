@@ -1,7 +1,7 @@
 using Morango.Application.Feature.CRUD.AgricultorEntity.DTOs;
 using Morango.Application.Feature.CRUD.AgricultorEntity.Interface;
 using Morango.Domain.Entities;
-using Morango.Application.Common.UseCase.Get;
+using Morango.Application.Feature.BaseGetCase;
 
 namespace Morango.Application.Feature.CRUD.AgricultorEntity.AgricultorCase.GetAll
 {

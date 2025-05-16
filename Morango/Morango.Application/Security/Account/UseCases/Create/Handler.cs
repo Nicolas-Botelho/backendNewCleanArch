@@ -1,6 +1,6 @@
+using ConectaFapes.Common.Infrastructure.Interfaces;
 using MediatR;
 using Morango.Application.Security.Interfaces;
-using Morango.Domain.Interfaces.Common;
 using Morango.Domain.Interfaces.Security;
 using Morango.Domain.Security.Account.Entities;
 using Morango.Domain.Security.Account.ValueObjects;
