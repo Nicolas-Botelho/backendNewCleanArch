@@ -5,7 +5,7 @@ using Morango.Domain.Interfaces.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Morango.Application.Feature.CRUD.AgricultorEntity.DTOs;
-using Morango.Application.Feature.BaseGetService;
+using Morango.Application.Service.BaseGetService;
 
 namespace Morango.Application.Feature.CRUD.AgricultorEntity.Service
 {

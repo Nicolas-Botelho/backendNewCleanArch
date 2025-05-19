@@ -2,7 +2,7 @@ using ConectaFapes.Common.Application.DTO;
 using ConectaFapes.Common.Domain.BaseEntities;
 using ConectaFapes.Common.Domain;
 using MediatR;
-using Morango.Application.Feature.BaseGetInterface;
+using Morango.Application.Interface.BaseGetInterface;
 
 namespace Morango.Application.Feature.BaseGetCase
 {

@@ -23,9 +23,9 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "Morango API", Version = "v1" });
 
-    //options.ResolveConflictingActions(x => x.First());
+    options.ResolveConflictingActions(x => x.First());
 
-    //options.CustomSchemaIds(type => type.ToString());
+    options.CustomSchemaIds(type => type.ToString());
 });
 
 #region Adição do Serilog

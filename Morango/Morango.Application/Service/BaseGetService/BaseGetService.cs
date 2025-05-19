@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using ConectaFapes.Common.Application.DTO;
 using ConectaFapes.Common.Domain.BaseEntities;
 using ConectaFapes.Common.Infrastructure.Interfaces;
-using Morango.Application.Feature.BaseGetInterface;
+using Morango.Application.Interface.BaseGetInterface;
 
-namespace Morango.Application.Feature.BaseGetService
+namespace Morango.Application.Service.BaseGetService
 {
     public class BaseGetService<Request, Response, Entity, Repository> : IBaseGetService<Request, Response, Entity>
        where Entity : BaseEntity
