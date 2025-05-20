@@ -19,4 +19,12 @@ namespace Morango.WebApi.Controllers.BaseControllers
             _logger = logger;
         }
     }
+
+    [Authorize]
+    public abstract class BaseControllerNotAuthorized : BaseController
+    {
+        public BaseControllerNotAuthorized(IMediator mediator, IMapper mapper, ILogger<BaseController> logger) : base(mediator, mapper, logger)
+        {
+        }
+    }
 }
